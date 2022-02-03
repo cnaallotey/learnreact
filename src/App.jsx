@@ -9,9 +9,6 @@ function App() {
   const [names, setNames] = useState("Mario")
   const [age , setAge] = useState(15)
   
-  const handleClick = () => {
-    console.log("I have been clicked")
-  }
 
   const lion = () => {
     setNames("Lion")
@@ -31,9 +28,9 @@ function App() {
       <Navbar />
       <Hero />
       <p>{names} is {age} years old. </p>
-      <button onClick={() => lion()} className="px-8 py-3 text-base font-medium bg-gray-900 text-white">Click me</button>
-      <button onClick={() => charles()} className="px-8 py-3 text-base font-medium bg-gray-900 text-white">Click me</button>
-      <button onClick={()=>ama()} className="px-8 py-3 text-base font-medium bg-gray-900 text-white">Click me</button>
+      <button onClick={() => lion()} className="px-8 py-3 text-base font-medium bg-gray-900 text-white">Lion</button>
+      <button onClick={() => charles()} className="px-8 py-3 text-base font-medium bg-gray-900 text-white">Charles</button>
+      <button onClick={()=>ama()} className="px-8 py-3 text-base font-medium bg-gray-900 text-white">Ama</button>
     </div>
   )
 }
